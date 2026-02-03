@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "image": "images/spe.png",
+    "title": "Excellent Learning Outcomes",
+    "description": "The electives are Marketing Management, Human Resource Management, Financial Management, International Business Management, Information Technology Management, Operations Management, Banking & Financial Services, Business Analytics, Risk Management, and Supply Chain Management.\n\nAll courses cover key concepts, practices, and trends in that domain."
+  },
+  {
+    "id": 2,
+    "image": "images/industry.png",
+    "title": "Offered in Four Specializations",
+    "description": "It is offered in specialization where the students get the opportunity to choose from five electives namely marketing, human resource, finance, entrepreneurship & family business and banking & insurance in fifth & sixth semester."
+  },
+  {
+    "id": 3,
+    "image": "images/ind.png",
+    "title": "Industrial Internships",
+    "description": "Your Internship will help you build a network of industry insiders, gain valuable work experience, explore career options, gain a competitive edge in the job market, and learn specific teaching-learning methods before applying them."
+  },
+  {
+    "id": 4,
+    "image": "images/learning-1.png",
+    "title": "Industry-Relevant Topics",
+    "description": "This programme rigorously covers industry-relevant topics to help students find a job and succeed as entrepreneurs or employees. This programme is based on best practices and industry-relevant skills."
+  },
+  {
+    "id": 5,
+    "image": "images/mentor.png",
+    "title": "Learn from Industry Insiders",
+    "description": "Industry and International business school experts work with regulators, certification providers, and technology partners to create programmes. Industry experts teach this advanced programme."
+  }
+]
+

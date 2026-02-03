@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Structure - Pricing Cards</title>
+</head>
+<body>
+    <section class="fee-structure-section">
+        <div class="pricing-section">
+            <div class="fee-section-header">
+                <h1>Fee Structure</h1>
+                <div class="fee-underline"></div>
+            </div>
+
+            <div class="fee-pricing-cards">
+                <!-- Semester Fee Card -->
+                <div class="fee-pricing-card">
+                    <div class="fee-plan-name">Semester Fee</div>
+                    <div class="fee-price-wrapper">
+                        <div class="fee-price">
+                            <span class="fee-price-currency">₹</span>24,250
+                        </div>
+                    </div>
+                    <div class="fee-price-description">
+                        Per semester payment plan
+                    </div>
+                    <ul class="fee-features-list">
+                        <li>REG FEE (ONE-TIME): ₹2,000</li>
+                        <li>PER SEMESTER FEE: ₹24,250</li>
+                        <li>EXAM FEE (PER SEM): ₹1,500</li>
+                    </ul>
+                    <button class="fee-cta-button">Enroll Now</button>
+                </div>
+
+                <!-- Annual Fee Card (Featured) -->
+                <div class="fee-pricing-card fee-featured">
+                    <div class="fee-plan-name">Annual Fee</div>
+                    <div class="fee-price-wrapper">
+                        <div class="fee-price">
+                            <span class="fee-price-currency">₹</span>48,500
+                        </div>
+                    </div>
+                    <div class="fee-price-description">
+                        One-time yearly payment with savings
+                    </div>
+                    <ul class="fee-features-list">
+                        <li>REG FEE (ONE-TIME): ₹2,000</li>
+                        <li>ONE TIME FEE: ₹48,500</li>
+                        <li>EXAM FEE (PER YEAR): ₹3,000</li>
+                    </ul>
+                    <button class="fee-cta-button">Enroll Now</button>
+                </div>
+
+                <!-- One Time Full Fee Card -->
+                <div class="fee-pricing-card">
+                    <div class="fee-plan-name">One Time Fee (Full Fee)</div>
+                    <div class="fee-price-wrapper">
+                        <div class="fee-price">
+                            <span class="fee-price-currency">₹</span>97,000
+                        </div>
+                    </div>
+                    <div class="fee-price-description">
+                        Complete program payment upfront
+                    </div>
+                    <ul class="fee-features-list">
+                        <li>REG FEE (ONE-TIME): ₹2,000</li>
+                        <li>TOTAL FEE: ₹97,000</li>
+                        <li>EXAM FEE: ₹6,000</li>
+                    </ul>
+                    <button class="fee-cta-button">Enroll Now</button>
+                </div>
+            </div>
+
+            <!-- Benefits Section -->
+            <div class="fee-benefits-note">
+                <h3>Special Fee Benefits</h3>
+                <ul>
+                    <li>Fee Benefit of <span class="fee-highlight">Rs. 4,000</span> on full fee payment</li>
+                    <li>Fee Benefit of <span class="fee-highlight">Rs. 2,000</span> on one year fee <span class="fee-highlight">(Applicable Only On First Year Fee)</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <style>
+        .fee-structure-section {
+            background: #fafafa;
+            padding: 50px 20px;
+            position: relative;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+
+        /* Animated background gradient */
+        .fee-structure-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #fff5f2 0%, #ffffff 50%, #fff8f5 100%);
+            z-index: 0;
+            animation: feeGradientShift 15s ease infinite;
+            pointer-events: none;
+        }
+
+        @keyframes feeGradientShift {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        .fee-structure-section .pricing-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            animation: feeFadeInUp 0.8s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes feeFadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fee-structure-section .fee-section-header {
+            text-align: center;
+            margin-bottom: 70px;
+            position: relative;
+        }
+
+        .fee-structure-section .fee-section-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+            animation: feeSlideDown 0.6s ease;
+        }
+
+        @keyframes feeSlideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fee-structure-section .fee-section-header .fee-underline {
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b35 0%, #ff8c61 100%);
+            margin: 0 auto;
+            border-radius: 2px;
+            animation: feeExpandWidth 0.8s ease 0.3s both;
+        }
+
+        @keyframes feeExpandWidth {
+            from {
+                width: 0;
+            }
+            to {
+                width: 80px;
+            }
+        }
+
+        .fee-structure-section .fee-pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            align-items: stretch;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .fee-structure-section .fee-pricing-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 35px 30px;
+            text-align: center;
+            border: 2px solid #f0f0f0;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            animation: feeCardFadeIn 0.6s ease backwards;
+            box-sizing: border-box;
+        }
+
+        .fee-structure-section .fee-pricing-card:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .fee-structure-section .fee-pricing-card:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .fee-structure-section .fee-pricing-card:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes feeCardFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Animated background on hover */
+        .fee-structure-section .fee-pricing-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 107, 53, 0.03) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            pointer-events: none;
+        }
+
+        .fee-structure-section .fee-pricing-card:hover::before {
+            opacity: 1;
+            animation: feeRotateGradient 3s linear infinite;
+        }
+
+        @keyframes feeRotateGradient {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .fee-structure-section .fee-pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            border-color: #e0e0e0;
+        }
+
+        .fee-structure-section .fee-pricing-card.fee-featured {
+            border: 2px solid #ff6b35;
+            box-shadow: 0 10px 35px rgba(255, 107, 53, 0.12);
+            position: relative;
+        }
+
+
+        @keyframes feeGradientMove {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .fee-structure-section .fee-pricing-card.fee-featured:hover::after {
+            opacity: 1;
+        }
+
+        .fee-structure-section .fee-pricing-card.fee-featured:hover {
+            box-shadow: 0 25px 50px rgba(255, 107, 53, 0.2);
+            transform: translateY(-12px) scale(1.02);
+        }
+
+        .fee-structure-section .fee-plan-name {
+            font-size: 1.15rem;
+            color: #4a4a4a;
+            margin-bottom: 20px;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s ease;
+        }
+
+        .fee-structure-section .fee-pricing-card:hover .fee-plan-name {
+            color: #2a2a2a;
+        }
+
+        .fee-structure-section .fee-price-wrapper {
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .fee-structure-section .fee-price {
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            line-height: 1;
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .fee-structure-section .fee-pricing-card:hover .fee-price {
+            transform: scale(1.05);
+        }
+
+        .fee-structure-section .fee-price-currency {
+            font-size: 1.6rem;
+            vertical-align: top;
+            margin-right: 2px;
+        }
+
+        .fee-structure-section .fee-featured .fee-price {
+            background: linear-gradient(135deg, #ff6b35 0%, #ff8c61 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-size: 200% 200%;
+            animation: feeShimmerText 3s ease infinite;
+        }
+
+        @keyframes feeShimmerText {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .fee-structure-section .fee-price-description {
+            font-size: 0.9rem;
+            color: #6a6a6a;
+            margin-bottom: 25px;
+            min-height: 40px;
+            line-height: 1.4;
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s ease;
+        }
+
+        .fee-structure-section .fee-pricing-card:hover .fee-price-description {
+            color: #4a4a4a;
+        }
+
+        .fee-structure-section .fee-features-list {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 25px;
+            flex-grow: 1;
+            position: relative;
+            z-index: 1;
+            padding: 0;
+            margin: 0 0 25px 0;
+        }
+
+        .fee-structure-section .fee-features-list li {
+            padding: 10px 0;
+            color: #4a4a4a;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            line-height: 1.4;
+            opacity: 0;
+            animation: feeFadeInLeft 0.5s ease forwards;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .fee-structure-section .fee-features-list li:nth-child(1) { animation-delay: 0.5s; }
+        .fee-structure-section .fee-features-list li:nth-child(2) { animation-delay: 0.6s; }
+        .fee-structure-section .fee-features-list li:nth-child(3) { animation-delay: 0.7s; }
+
+        @keyframes feeFadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .fee-structure-section .fee-pricing-card:hover .fee-features-list li {
+            transform: translateX(5px);
+            color: #2a2a2a;
+        }
+
+        .fee-structure-section .fee-features-list li::before {
+            content: '';
+            width: 18px;
+            height: 18px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ff6b35' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E") no-repeat center;
+            background-size: contain;
+            flex-shrink: 0;
+            animation: feeCheckPulse 2s ease infinite;
+        }
+
+        @keyframes feeCheckPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .fee-structure-section .fee-cta-button {
+            width: 100%;
+            padding: 14px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            border: 2px solid #e8e8e8;
+            background: #ffffff;
+            color: #4a4a4a;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-transform: capitalize;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .fee-structure-section .fee-cta-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.05);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+        }
+
+        .fee-structure-section .fee-cta-button:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .fee-structure-section .fee-cta-button:hover {
+            background: #f8f9fa;
+            border-color: #d0d0d0;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .fee-structure-section .fee-cta-button:active {
+            transform: translateY(-1px);
+        }
+
+        .fee-structure-section .fee-featured .fee-cta-button {
+            background: linear-gradient(135deg, #ff6b35 0%, #ff8c61 100%);
+            color: #ffffff;
+            border: none;
+            background-size: 200% 200%;
+            animation: feeGradientButton 3s ease infinite;
+        }
+
+        @keyframes feeGradientButton {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .fee-structure-section .fee-featured .fee-cta-button::before {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .fee-structure-section .fee-featured .fee-cta-button:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+        }
+
+        .fee-structure-section .fee-benefits-note {
+            max-width: 900px;
+            margin: 60px auto 0;
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 35px;
+            border-left: 4px solid #ff6b35;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+            position: relative;
+            overflow: hidden;
+            animation: feeFadeInUp 0.8s ease 0.6s backwards;
+            transition: all 0.4s ease;
+            box-sizing: border-box;
+        }
+
+        .fee-structure-section .fee-benefits-note::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.05), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .fee-structure-section .fee-benefits-note:hover::before {
+            left: 100%;
+        }
+
+        .fee-structure-section .fee-benefits-note:hover {
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.12);
+            transform: translateY(-3px);
+        }
+
+        .fee-structure-section .fee-benefits-note h3 {
+            color: #1a1a1a;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+            position: relative;
+            display: inline-block;
+        }
+
+        .fee-structure-section .fee-benefits-note h3::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #ff6b35 0%, #ff8c61 100%);
+            transition: width 0.5s ease;
+        }
+
+        .fee-structure-section .fee-benefits-note:hover h3::after {
+            width: 100%;
+        }
+
+        .fee-structure-section .fee-benefits-note ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .fee-structure-section .fee-benefits-note li {
+            padding: 12px 0;
+            color: #4a4a4a;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .fee-structure-section .fee-benefits-note li:hover {
+            transform: translateX(8px);
+            color: #2a2a2a;
+        }
+
+        .fee-structure-section .fee-benefits-note li::before {
+            content: '✓';
+            color: #ff6b35;
+            font-weight: 700;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 107, 53, 0.1);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .fee-structure-section .fee-benefits-note li:hover::before {
+            background: rgba(255, 107, 53, 0.2);
+            transform: rotate(360deg) scale(1.1);
+        }
+
+        .fee-structure-section .fee-highlight {
+            color: #ff6b35;
+            font-weight: 600;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .fee-structure-section .fee-benefits-note li:hover .fee-highlight {
+            color: #ff5722;
+        }
+
+        /* Floating elements animation */
+        @keyframes feeFloat {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .fee-structure-section .fee-pricing-card:nth-child(1) {
+            animation: feeCardFadeIn 0.6s ease backwards, feeFloat 6s ease-in-out 1s infinite;
+        }
+
+        .fee-structure-section .fee-pricing-card:nth-child(2) {
+            animation: feeCardFadeIn 0.6s ease backwards, feeFloat 6s ease-in-out 1.5s infinite;
+        }
+
+        .fee-structure-section .fee-pricing-card:nth-child(3) {
+            animation: feeCardFadeIn 0.6s ease backwards, feeFloat 6s ease-in-out 2s infinite;
+        }
+
+        @media (max-width: 1024px) {
+            .fee-structure-section .fee-pricing-cards {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .fee-structure-section {
+                padding: 60px 20px;
+            }
+
+            .fee-structure-section .fee-section-header h1 {
+                font-size: 2rem;
+            }
+
+            .fee-structure-section .fee-pricing-cards {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .fee-structure-section .fee-price {
+                font-size: 2.8rem;
+            }
+
+            .fee-structure-section .fee-pricing-card {
+                padding: 30px 25px;
+            }
+
+            .fee-structure-section .fee-benefits-note {
+                padding: 25px;
+            }
+        }
+
+        /* Reduce motion for users who prefer it */
+        @media (prefers-reduced-motion: reduce) {
+            .fee-structure-section,
+            .fee-structure-section *,
+            .fee-structure-section *::before,
+            .fee-structure-section *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</body>
+</html>
