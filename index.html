@@ -1345,6 +1345,19 @@
         padding: 20px 15px;
       }
     }
+    :root {
+      --mca-about-section-heading-margin-bottom: -9px;
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --mca-about-section-heading-margin-bottom: -20px;
+      }
+      .mca-about-image-wrapper {
+        max-width: 95%;
+        margin: -35px auto;
+    }
+    }
   </style>
 
   <!-- GLA Features Section -->
@@ -1452,6 +1465,273 @@
       </div>
     </div>
   </section>
+
+  <div class="mca-about-separator"></div>
+
+  <!-- About Online MCA Program Section -->
+  <section class="mca-about-section">
+    <div class="mca-about-container">
+      <div class="section-header mca-about-section-heading" style="margin-bottom: var(--mca-about-section-heading-margin-bottom);">
+        <h1>About Online <span class="highlight">MCA Program</span></h1>
+      </div>
+      <div class="mca-about-image-col">
+        <div class="mca-about-image-wrapper">
+          <img src="mca.png" alt="Online MCA Program" class="mca-about-image">
+        </div>
+      </div>
+      <div class="mca-about-text-col">
+        <p class="mca-about-tagline">Empower Your Tech Future – 100% Online | Industry-Aligned | Globally Relevant</p>
+        <p class="mca-about-description">Step into the digital era with confidence through GLA Online's MCA program, meticulously designed for aspirants ready to shape the future of technology. This cutting-edge program offers a <strong>perfect blend of theoretical excellence and hands-on practical skills</strong>, helping you become a dynamic IT professional from the comfort of your home.</p>
+        <p class="mca-about-description">Whether you're a recent graduate or a working professional, our online MCA ensures you gain in-depth expertise in computer applications, supported by world-class faculty, flexible learning schedules, and access to interactive virtual classrooms.</p>
+        <h3 class="mca-about-subheading">Specializations Offered:</h3>
+        <ul class="mca-about-list">
+          <li>100% Online with flexible learning options</li>
+          <li>Expert faculty with industry &amp; academic experience</li>
+          <li>Career-oriented curriculum designed to meet IT industry demands</li>
+          <li>Interactive virtual classrooms &amp; advanced e-learning resources</li>
+          <li>Designed for working professionals and fresh graduates alike</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .mca-about-separator {
+      display: block;
+      height: 2rem;
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      background: #f5f5f5;
+    }
+    .mca-about-section {
+      background: #ffffff;
+      padding: 80px 0;
+      width: 100%;
+      margin-top: 0;
+    }
+    .mca-about-section-heading {
+      grid-column: 1 / -1;
+      margin-bottom: 40px;
+    }
+    .mca-about-section-heading h1 {
+      font-family: 'Queens', Georgia, 'Times New Roman', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 10px;
+      letter-spacing: -1px;
+    }
+    .mca-about-section-heading .highlight {
+      color: #ff3d02;
+    }
+    .mca-about-container {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    @keyframes mcaSlideFromLeft {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes mcaSlideFromRight {
+      from { opacity: 0; transform: translateX(50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    .mca-about-image-col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    .mca-about-section.in-view .mca-about-image-col {
+      animation: mcaSlideFromLeft 0.55s ease-out 150ms both;
+    }
+    .mca-about-image-wrapper {
+      width: 100%;
+      max-width: 95%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: #facc1500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    .mca-about-image {
+      width: 85%;
+      height: 85%;
+      object-fit: contain;
+      object-position: center;
+    }
+    .mca-about-text-col {
+      max-width: 560px;
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    .mca-about-section.in-view .mca-about-text-col {
+      animation: mcaSlideFromRight 0.55s ease-out 150ms both;
+    }
+    .mca-about-tagline {
+      font-family: 'HelveticaNowDisplay', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+      margin: 0 0 20px 0;
+      line-height: 1.4;
+    }
+    .mca-about-description {
+      font-family: 'HelveticaNowDisplay', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+      margin: 0 0 18px 0;
+    }
+    .mca-about-subheading {
+      font-family: 'HelveticaNowDisplay', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #FF7B00;
+      margin: 24px 0 16px 0;
+    }
+    .mca-about-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .mca-about-list li {
+      font-family: 'HelveticaNowDisplay', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 14px;
+      padding-left: 36px;
+      position: relative;
+    }
+    .mca-about-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 24px;
+      height: 24px;
+      background-image: url('cap-icon.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    /* Hover fun – desktop only (min-width 1024px) */
+    @media (min-width: 1024px) {
+      .mca-about-image-wrapper {
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+      }
+      .mca-about-image-wrapper:hover {
+        transform: scale(1.06);
+        box-shadow: 0 24px 48px rgba(250, 204, 21, 0.3);
+      }
+      .mca-about-image {
+        transition: transform 0.45s ease;
+      }
+      .mca-about-section:hover .mca-about-image {
+        transform: scale(1.08);
+      }
+      .mca-about-section-heading .highlight {
+        transition: color 0.3s ease, transform 0.25s ease;
+      }
+      .mca-about-section:hover .mca-about-section-heading .highlight {
+        color: #ff5722;
+        transform: scale(1.03);
+      }
+      .mca-about-tagline {
+        transition: color 0.3s ease;
+      }
+      .mca-about-section:hover .mca-about-tagline {
+        color: #ff3d02;
+      }
+      .mca-about-subheading {
+        transition: color 0.3s ease, transform 0.25s ease;
+      }
+      .mca-about-section:hover .mca-about-subheading {
+        color: #e56a00;
+        transform: translateX(4px);
+      }
+      .mca-about-list li {
+        transition: transform 0.25s ease, color 0.25s ease, padding-left 0.25s ease;
+      }
+      .mca-about-list li:hover {
+        transform: translateX(8px);
+        color: #1a1a1a;
+        padding-left: 40px;
+      }
+      .mca-about-list li::before {
+        transition: transform 0.25s ease;
+      }
+      .mca-about-list li:hover::before {
+        transform: scale(1.15);
+      }
+    }
+    @media (max-width: 992px) {
+      .mca-about-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 20px;
+      }
+      .mca-about-image-col {
+        order: 1;
+      }
+      .mca-about-text-col {
+        order: 2;
+        max-width: 100%;
+      }
+      .mca-about-image-wrapper {
+        max-width: 95%;
+      }
+      .mca-about-section-heading h1 {
+        font-size: 2rem;
+      }
+      .mca-about-section-heading {
+        margin-bottom: 30px;
+      }
+    }
+    @media (max-width: 576px) {
+      .mca-about-section {
+        padding: 50px 0;
+      }
+      .mca-about-container {
+        padding: 0 15px;
+      }
+      .mca-about-section-heading h1 {
+        font-size: 2rem;
+      }
+      .mca-about-section-heading {
+        margin-bottom: 24px;
+      }
+      .mca-about-description,
+      .mca-about-list li {
+        font-size: 16px;
+      }
+    }
+  </style>
+
+  <script>
+    (function () {
+      var mcaSection = document.querySelector('.mca-about-section');
+      if (!mcaSection) return;
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            mcaSection.classList.add('in-view');
+            observer.unobserve(mcaSection);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px' });
+      observer.observe(mcaSection);
+    })();
+  </script>
 
   <div class="section-wrapper">
     <div class="container">
@@ -1873,11 +2153,11 @@
   <div class="eligibility-section">
     <h2 class="eligibility-heading">Eligibility</h2>
     <div class="eligibility-container">
-      <img src="/eligibility.jpg" class="eligibility-image" alt="Eligibility Image">
+      <img src="eligibility.jpg" class="eligibility-image" alt="Eligibility Image">
       <div class="eligibility-right-container">
         <div class="eligibility-card">
           <div class="eligibility-card-image">
-            <img src="/education.png" alt="Card Image">
+            <img src="education.png" alt="Card Image">
           </div>
           <div class="eligibility-card-content">
             Bachelor’s degree with at least 50% marks or equivalent CGPA in any discipline from a recognised
@@ -1886,7 +2166,7 @@
         </div>
         <div class="eligibility-card">
           <div class="eligibility-card-image">
-            <img src="/management.png" alt="Card Image">
+            <img src="management.png" alt="Card Image">
           </div>
           <div class="eligibility-card-content">
             Entrepreneurs seeking to develop essential skills to effectively manage critical business projects and
@@ -1895,7 +2175,7 @@
         </div>
         <div class="eligibility-card">
           <div class="eligibility-card-image">
-            <img src="/work-schedule.png" alt="Card Image">
+            <img src="work-schedule.png" alt="Card Image">
           </div>
           <div class="eligibility-card-content">
             Candidates with relevant work experience and additional qualifications will be given preference.
@@ -3363,6 +3643,201 @@
       </div>
     </div>
   </div>
+
+  <!-- Career Options Section -->
+  <div class="career-options-section">
+    <div class="career-options-section-title">
+      <h2>Career Options</h2>
+    </div>
+    <div class="career-options-grid">
+      <div class="career-option-card">
+        <div class="career-option-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
+        <span class="career-option-label">Software Developer</span>
+      </div>
+      <div class="career-option-card">
+        <div class="career-option-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+            <line x1="6" y1="10" x2="6.01" y2="10"></line>
+            <line x1="10" y1="10" x2="10.01" y2="10"></line>
+            <line x1="14" y1="10" x2="14.01" y2="10"></line>
+          </svg>
+        </div>
+        <span class="career-option-label">Hardware Engineer</span>
+      </div>
+      <div class="career-option-card">
+        <div class="career-option-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-1.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h1.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v1.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-1.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </div>
+        <span class="career-option-label">System Analyst</span>
+      </div>
+      <div class="career-option-card">
+        <div class="career-option-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10"></line>
+            <line x1="12" y1="20" x2="12" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="14"></line>
+          </svg>
+        </div>
+        <span class="career-option-label">Data Scientist</span>
+      </div>
+      <div class="career-option-card">
+        <div class="career-option-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+          </svg>
+        </div>
+        <span class="career-option-label">Software Consultant</span>
+      </div>
+      <div class="career-option-card">
+        <div class="career-option-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg>
+        </div>
+        <span class="career-option-label">Web Designer and Developer</span>
+      </div>
+      <div class="career-option-card">
+        <div class="career-option-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+          </svg>
+        </div>
+        <span class="career-option-label">Troubleshooter</span>
+      </div>
+    </div>
+  </div>
+  <style>
+    .career-options-section {
+      background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f1f3f5 100%);
+      padding: 50px 20px;
+    }
+    .career-options-section-title {
+      text-align: center;
+      margin-bottom: 48px;
+      animation: fadeInDown 0.8s ease-out;
+    }
+    .career-options-section-title h2 {
+      color: #1a1a1a;
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.3;
+      margin: 0;
+    }
+    .career-options-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    @media (min-width: 992px) {
+      .career-options-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .career-option-card:last-child {
+        grid-column: 2;
+      }
+    }
+    .career-option-card {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 24px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+    .career-option-card:nth-child(1) { animation-delay: 0.05s; }
+    .career-option-card:nth-child(2) { animation-delay: 0.1s; }
+    .career-option-card:nth-child(3) { animation-delay: 0.15s; }
+    .career-option-card:nth-child(4) { animation-delay: 0.2s; }
+    .career-option-card:nth-child(5) { animation-delay: 0.25s; }
+    .career-option-card:nth-child(6) { animation-delay: 0.3s; }
+    .career-option-card:nth-child(7) { animation-delay: 0.35s; }
+    .career-option-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 61, 2, 0.35);
+      background: #ffffff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+    .career-option-icon {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      background: rgba(255, 107, 53, 0.12);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid rgba(255, 107, 53, 0.25);
+      transition: all 0.3s ease;
+    }
+    .career-option-card:hover .career-option-icon {
+      background: rgba(255, 107, 53, 0.18);
+      border-color: rgba(255, 61, 2, 0.5);
+      transform: scale(1.05);
+    }
+    .career-option-icon svg {
+      width: 26px;
+      height: 26px;
+      stroke: #ff3d02;
+      fill: none;
+    }
+    .career-option-card:hover .career-option-icon svg {
+      stroke: #e63500;
+    }
+    .career-option-label {
+      color: #333333;
+      font-size: 1.1rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .career-option-card:hover .career-option-label {
+      color: #1a1a1a;
+    }
+    @media (max-width: 768px) {
+      .career-options-section-title h2 {
+        font-size: 1.8rem;
+      }
+      .career-options-grid {
+        gap: 16px;
+        grid-template-columns: 1fr;
+      }
+      .career-option-card {
+        padding: 20px;
+        gap: 16px;
+      }
+      .career-option-icon {
+        width: 46px;
+        height: 46px;
+      }
+      .career-option-icon svg {
+        width: 22px;
+        height: 22px;
+      }
+      .career-option-label {
+        font-size: 1rem;
+      }
+    }
+  </style>
+
   <style>
     .benefits-section {
       background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
