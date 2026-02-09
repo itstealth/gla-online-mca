@@ -1105,261 +1105,6 @@
     <div id="reg-form" style="padding:10px 0 0 0"></div>
   </div>
 
-  <!-- Duration Stript -->
-  <section class="duration-strip-section">
-    <div class="duration-strip-container">
-      <!-- Left Section - Orange -->
-      <div class="duration-strip-left">
-        <div class="duration-info-block">
-          <div class="duration-icon-wrapper">
-            <svg class="duration-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-          </div>
-          <div class="duration-text-content">
-            <div class="duration-label">Programme Starts:</div>
-            <div class="duration-value">15th February, 2026</div>
-          </div>
-        </div>
-
-        <div class="duration-divider"></div>
-
-        <div class="duration-info-block">
-          <div class="duration-icon-wrapper">
-            <svg class="duration-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-            </svg>
-          </div>
-          <div class="duration-text-content">
-            <div class="duration-label">Programme Duration:</div>
-            <div class="duration-value">2 Years</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right Section - Purple -->
-      <div class="duration-strip-right">
-        <a href="#hero-section" class="download-brochure-btn">
-          Download Brochure
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <style>
-    /* Smooth scrolling for anchor links */
-    html {
-      scroll-behavior: smooth;
-    }
-
-    /* Duration Strip Section */
-    .duration-strip-section {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    .duration-strip-container {
-      display: flex;
-      width: 100%;
-      min-height: 50px;
-    }
-
-    /* Left Section - Orange (2/3 width) */
-    .duration-strip-left {
-      flex: 2;
-      background-color: #ff3d02;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 5px 40px;
-      gap: 0;
-    }
-
-    .duration-info-block {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
-      padding: 0 20px;
-    }
-
-    .duration-icon-wrapper {
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    .duration-icon {
-      width: 48px;
-      height: 48px;
-      color: #ffffff;
-      stroke-width: 2;
-    }
-
-    .duration-text-content {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .duration-label {
-      font-size: 14px;
-      font-weight: 500;
-      color: #ffffff;
-      line-height: 1.3;
-      white-space: nowrap;
-    }
-
-    .duration-value {
-      font-size: 16px;
-      font-weight: 600;
-      color: #ffffff;
-      line-height: 1.3;
-      white-space: nowrap;
-    }
-
-    .duration-divider {
-      width: 1px;
-      height: 60px;
-      background-color: rgba(255, 255, 255, 0.4);
-      flex-shrink: 0;
-      margin: 0 10px;
-    }
-
-    /* Right Section - Purple (1/3 width) */
-    .duration-strip-right {
-      flex: 1;
-      background-color: #333;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 25px 40px;
-    }
-
-    .download-brochure-btn {
-      background-color: transparent;
-      border: none;
-      color: #ffffff;
-      font-size: 16px;
-      font-weight: 600;
-      padding: 0;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      text-transform: none;
-      letter-spacing: 0.5px;
-      white-space: nowrap;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    .download-brochure-btn:hover {
-      opacity: 0.9;
-      transform: translateY(-1px);
-      text-decoration: none;
-      color: #ffffff;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .duration-strip-section {
-        margin-top: 40px;
-      }
-
-      .duration-strip-container {
-        flex-direction: column;
-        min-height: auto;
-      }
-
-      .duration-strip-left {
-        flex: 1;
-        flex-direction: column;
-        gap: 20px;
-        padding: 25px 20px;
-      }
-
-      .duration-info-block {
-        flex: 1;
-        width: 100%;
-        justify-content: flex-center;
-        padding: 0;
-      }
-
-      .duration-divider {
-        /* display: none; */
-        width: 100%;
-        height: 2px;
-      }
-
-      .duration-strip-right {
-        flex: 1;
-        padding: 25px 20px;
-        width: 100%;
-      }
-
-      .download-brochure-btn {
-        width: 100%;
-        text-align: center;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .duration-strip-left {
-        padding: 20px 15px;
-        gap: 15px;
-      }
-
-      .duration-info-block {
-        gap: 12px;
-      }
-
-      .duration-icon-wrapper {
-        width: 35px;
-        height: 35px;
-      }
-
-      .duration-icon {
-        width: 20px;
-        height: 20px;
-      }
-
-      .duration-label {
-        font-size: 12px;
-      }
-
-      .duration-value {
-        font-size: 14px;
-      }
-
-      .download-brochure-btn {
-        font-size: 14px;
-      }
-
-      .duration-strip-right {
-        padding: 20px 15px;
-      }
-    }
-    :root {
-      --mca-about-section-heading-margin-bottom: -9px;
-    }
-
-    @media (max-width: 768px) {
-      :root {
-        --mca-about-section-heading-margin-bottom: -20px;
-      }
-      .mca-about-image-wrapper {
-        max-width: 95%;
-        margin: -35px auto;
-    }
-    }
-  </style>
-
   <!-- GLA Features Section -->
   <section class="gla-features-section">
     <div class="gla-features-container">
@@ -1471,7 +1216,8 @@
   <!-- About Online MCA Program Section -->
   <section class="mca-about-section">
     <div class="mca-about-container">
-      <div class="section-header mca-about-section-heading" style="margin-bottom: var(--mca-about-section-heading-margin-bottom);">
+      <div class="section-header mca-about-section-heading"
+        style="margin-bottom: var(--mca-about-section-heading-margin-bottom);">
         <h1>About Online <span class="highlight">MCA Program</span></h1>
       </div>
       <div class="mca-about-image-col">
@@ -1481,8 +1227,13 @@
       </div>
       <div class="mca-about-text-col">
         <p class="mca-about-tagline">Empower Your Tech Future – 100% Online | Industry-Aligned | Globally Relevant</p>
-        <p class="mca-about-description">Step into the digital era with confidence through GLA Online's MCA program, meticulously designed for aspirants ready to shape the future of technology. This cutting-edge program offers a <strong>perfect blend of theoretical excellence and hands-on practical skills</strong>, helping you become a dynamic IT professional from the comfort of your home.</p>
-        <p class="mca-about-description">Whether you're a recent graduate or a working professional, our online MCA ensures you gain in-depth expertise in computer applications, supported by world-class faculty, flexible learning schedules, and access to interactive virtual classrooms.</p>
+        <p class="mca-about-description">Step into the digital era with confidence through GLA Online's MCA program,
+          meticulously designed for aspirants ready to shape the future of technology. This cutting-edge program offers
+          a <strong>perfect blend of theoretical excellence and hands-on practical skills</strong>, helping you become a
+          dynamic IT professional from the comfort of your home.</p>
+        <p class="mca-about-description">Whether you're a recent graduate or a working professional, our online MCA
+          ensures you gain in-depth expertise in computer applications, supported by world-class faculty, flexible
+          learning schedules, and access to interactive virtual classrooms.</p>
         <h3 class="mca-about-subheading">Specializations Offered:</h3>
         <ul class="mca-about-list">
           <li>100% Online with flexible learning options</li>
@@ -1503,16 +1254,19 @@
       margin-left: calc(50% - 50vw);
       background: #f5f5f5;
     }
+
     .mca-about-section {
       background: #ffffff;
       padding: 80px 0;
       width: 100%;
       margin-top: 0;
     }
+
     .mca-about-section-heading {
       grid-column: 1 / -1;
       margin-bottom: 40px;
     }
+
     .mca-about-section-heading h1 {
       font-family: 'Queens', Georgia, 'Times New Roman', serif;
       font-size: 3rem;
@@ -1521,9 +1275,11 @@
       margin-bottom: 10px;
       letter-spacing: -1px;
     }
+
     .mca-about-section-heading .highlight {
       color: #ff3d02;
     }
+
     .mca-about-container {
       max-width: 1320px;
       margin: 0 auto;
@@ -1533,14 +1289,31 @@
       gap: 60px;
       align-items: center;
     }
+
     @keyframes mcaSlideFromLeft {
-      from { opacity: 0; transform: translateX(-50px); }
-      to { opacity: 1; transform: translateX(0); }
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
+
     @keyframes mcaSlideFromRight {
-      from { opacity: 0; transform: translateX(50px); }
-      to { opacity: 1; transform: translateX(0); }
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
+
     .mca-about-image-col {
       display: flex;
       justify-content: center;
@@ -1548,9 +1321,11 @@
       opacity: 0;
       transform: translateX(-50px);
     }
+
     .mca-about-section.in-view .mca-about-image-col {
       animation: mcaSlideFromLeft 0.55s ease-out 150ms both;
     }
+
     .mca-about-image-wrapper {
       width: 100%;
       max-width: 95%;
@@ -1563,20 +1338,24 @@
       overflow: hidden;
       position: relative;
     }
+
     .mca-about-image {
       width: 85%;
       height: 85%;
       object-fit: contain;
       object-position: center;
     }
+
     .mca-about-text-col {
       max-width: 560px;
       opacity: 0;
       transform: translateX(50px);
     }
+
     .mca-about-section.in-view .mca-about-text-col {
       animation: mcaSlideFromRight 0.55s ease-out 150ms both;
     }
+
     .mca-about-tagline {
       font-family: 'HelveticaNowDisplay', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       font-size: 16px;
@@ -1585,6 +1364,7 @@
       margin: 0 0 20px 0;
       line-height: 1.4;
     }
+
     .mca-about-description {
       font-family: 'HelveticaNowDisplay', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       font-size: 18px;
@@ -1592,6 +1372,7 @@
       line-height: 1.6;
       margin: 0 0 18px 0;
     }
+
     .mca-about-subheading {
       font-family: 'HelveticaNowDisplay', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       font-size: 20px;
@@ -1599,11 +1380,13 @@
       color: #FF7B00;
       margin: 24px 0 16px 0;
     }
+
     .mca-about-list {
       list-style: none;
       padding: 0;
       margin: 0;
     }
+
     .mca-about-list li {
       font-family: 'HelveticaNowDisplay', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       font-size: 18px;
@@ -1613,6 +1396,7 @@
       padding-left: 36px;
       position: relative;
     }
+
     .mca-about-list li::before {
       content: '';
       position: absolute;
@@ -1624,92 +1408,117 @@
       background-size: contain;
       background-repeat: no-repeat;
     }
+
     /* Hover fun – desktop only (min-width 1024px) */
     @media (min-width: 1024px) {
       .mca-about-image-wrapper {
         transition: transform 0.4s ease, box-shadow 0.4s ease;
       }
+
       .mca-about-image-wrapper:hover {
         transform: scale(1.06);
         box-shadow: 0 24px 48px rgba(250, 204, 21, 0.3);
       }
+
       .mca-about-image {
         transition: transform 0.45s ease;
       }
+
       .mca-about-section:hover .mca-about-image {
         transform: scale(1.08);
       }
+
       .mca-about-section-heading .highlight {
         transition: color 0.3s ease, transform 0.25s ease;
       }
+
       .mca-about-section:hover .mca-about-section-heading .highlight {
         color: #ff5722;
         transform: scale(1.03);
       }
+
       .mca-about-tagline {
         transition: color 0.3s ease;
       }
+
       .mca-about-section:hover .mca-about-tagline {
         color: #ff3d02;
       }
+
       .mca-about-subheading {
         transition: color 0.3s ease, transform 0.25s ease;
       }
+
       .mca-about-section:hover .mca-about-subheading {
         color: #e56a00;
         transform: translateX(4px);
       }
+
       .mca-about-list li {
         transition: transform 0.25s ease, color 0.25s ease, padding-left 0.25s ease;
       }
+
       .mca-about-list li:hover {
         transform: translateX(8px);
         color: #1a1a1a;
         padding-left: 40px;
       }
+
       .mca-about-list li::before {
         transition: transform 0.25s ease;
       }
+
       .mca-about-list li:hover::before {
         transform: scale(1.15);
       }
     }
+
     @media (max-width: 992px) {
       .mca-about-container {
         grid-template-columns: 1fr;
         gap: 40px;
         padding: 0 20px;
       }
+
       .mca-about-image-col {
         order: 1;
       }
+
       .mca-about-text-col {
         order: 2;
         max-width: 100%;
       }
+
       .mca-about-image-wrapper {
         max-width: 95%;
       }
+
       .mca-about-section-heading h1 {
         font-size: 2rem;
       }
+
       .mca-about-section-heading {
         margin-bottom: 30px;
       }
     }
+
     @media (max-width: 576px) {
       .mca-about-section {
         padding: 50px 0;
       }
+
       .mca-about-container {
         padding: 0 15px;
       }
+
       .mca-about-section-heading h1 {
         font-size: 2rem;
       }
+
       .mca-about-section-heading {
         margin-bottom: 24px;
       }
+
       .mca-about-description,
       .mca-about-list li {
         font-size: 16px;
@@ -1732,7 +1541,7 @@
       observer.observe(mcaSection);
     })();
   </script>
-<!--
+  <!--
   <div class="section-wrapper">
     <div class="container">
       <div class="section-header">
@@ -2274,282 +2083,6 @@
         gap: 10px;
         margin-left: 0;
       }
-    }
-  </style>
-
-  <div class="highlights-section">
-    <div class="section-highlights-header">
-      <h1>Highlights of Online MBA at GLA</h1>
-    </div>
-
-    <div class="highlights-grid">
-      <!-- Card 1 -->
-      <div class="highlight-card">
-        <div class="icon-circle">
-          <img src="aicte.png" alt="AICTE Approved">
-        </div>
-        <div class="card-content">
-          <h3>University Master Degree</h3>
-          <p>You'll get a degree from a top Indian university.</p>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="highlight-card">
-        <div class="icon-circle">
-          <img src="self-paced.png" alt="Live Sessions">
-        </div>
-        <div class="card-content">
-          <h3>Certification Content from MOOC courses</h3>
-          <p>The curriculum will match leading academic institutions and certification partners.</p>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="highlight-card">
-        <div class="icon-circle">
-          <img src="global.png" alt="Global Network">
-        </div>
-        <div class="card-content">
-          <h3>Industry Project</h3>
-          <p>Industrial projects will be mentored in the programme's final year.</p>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="highlight-card">
-        <div class="icon-circle">
-          <img src="collaboration.png" alt="Live Projects">
-        </div>
-        <div class="card-content">
-          <h3>Faculties</h3>
-          <p>Faculties with Global University Pedigree.</p>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-  <style>
-    .highlights-section {
-      max-width: 100%;
-      margin: 0 auto;
-      padding: 50px 0;
-      background-color: #333;
-    }
-
-    .section-highlights-header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .section-highlights-header h1 {
-      font-size: 32px;
-      font-weight: 700;
-      background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-    }
-
-    .highlights-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 75px 25px;
-      margin-top: 40px;
-      padding-top: 50px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .highlight-card {
-      background-color: white;
-      border-radius: 15px;
-      padding: 0 20px 25px 20px;
-      position: relative;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-      transition: all 0.3s ease;
-      overflow: visible;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border: 2px solid transparent;
-    }
-
-    .highlight-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 30px rgba(255, 107, 0, 0.12);
-      border-color: #ff8c42;
-    }
-
-    .icon-circle {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      /* background: linear-gradient(135deg, #ff6b00 0%, #ff8c42 100%); */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: -50px;
-      margin-bottom: 20px;
-      box-shadow: 0 8px 20px rgba(255, 107, 0, 0.25);
-      /* border: 5px solid white; */
-      position: relative;
-      z-index: 1;
-    }
-
-    /* Image styling inside circle */
-    .icon-circle img {
-      width: 100px;
-      height: 100px;
-      object-fit: contain;
-    }
-
-    .card-content {
-      text-align: center !important;
-      width: 100%;
-    }
-
-    .highlight-card h3 {
-      font-size: 18px;
-      color: #222;
-      /* margin-bottom: 12px; */
-      font-weight: 600;
-      line-height: 1.3;
-      transition: color 0.3s ease, transform 0.3s ease;
-    }
-
-    /* Orange title for first card */
-    .highlight-card:hover h3 {
-      color: #ff6b00;
-      transform: translateY(-2px);
-      animation: title-pop 0.35s ease both;
-    }
-
-    @keyframes title-pop {
-      0% {
-        transform: translateY(0) scale(1);
-      }
-
-      60% {
-        transform: translateY(-3px) scale(1.02);
-      }
-
-      100% {
-        transform: translateY(-2px) scale(1.01);
-      }
-    }
-
-    .highlight-card p {
-      color: #666;
-      font-size: 16px;
-      line-height: 1.5;
-      font-weight: 400;
-      text-align: center !important;
-    }
-
-    /* Orange border for first card
-  .highlight-card:nth-child(1) {
-      border: 2px solid #ff6b00;
-  } */
-
-    @media (max-width: 1024px) {
-      .highlights-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 75px 20px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      body {
-        padding: 30px 0px;
-      }
-
-      .highlights-section {
-        padding: 50px 15px;
-      }
-
-      .section-highlights-header h1 {
-        font-size: 32px;
-        letter-spacing: 1px;
-      }
-
-      .section-highlights-header {
-        margin-bottom: 40px;
-      }
-
-      .highlights-grid {
-        grid-template-columns: 1fr;
-        gap: 60px 20px;
-        padding-top: 50px;
-      }
-
-      .highlight-card {
-        padding: 0 20px 25px 20px;
-      }
-
-      .icon-circle {
-        width: 90px;
-        height: 90px;
-        margin-top: -45px;
-      }
-
-      .icon-circle img {
-        width: 90px;
-        height: 90px;
-      }
-
-      .highlight-card h3 {
-        font-size: 1rem;
-      }
-
-      .highlight-card p {
-        font-size: 16px;
-      }
-    }
-
-    /* Minimal animation - simple fade in */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .highlight-card {
-      animation: fadeIn 0.5s ease forwards;
-      opacity: 0;
-    }
-
-    .highlight-card:nth-child(1) {
-      animation-delay: 0.05s;
-    }
-
-    .highlight-card:nth-child(2) {
-      animation-delay: 0.1s;
-    }
-
-    .highlight-card:nth-child(3) {
-      animation-delay: 0.15s;
-    }
-
-    .highlight-card:nth-child(4) {
-      animation-delay: 0.2s;
-    }
-
-    .highlight-card:nth-child(5) {
-      animation-delay: 0.25s;
-    }
-
-    .highlight-card:nth-child(6) {
-      animation-delay: 0.3s;
     }
   </style>
 
@@ -3258,6 +2791,282 @@
   </style>
 
 
+  <div class="highlights-section">
+    <div class="section-highlights-header">
+      <h1>Highlights of Online MCA at GLA</h1>
+    </div>
+
+    <div class="highlights-grid">
+      <!-- Card 1 -->
+      <div class="highlight-card">
+        <div class="icon-circle">
+          <img src="aicte.png" alt="AICTE Approved">
+        </div>
+        <div class="card-content">
+          <h3>University Master Degree</h3>
+          <p>You'll get a degree from a top Indian university.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="highlight-card">
+        <div class="icon-circle">
+          <img src="self-paced.png" alt="Live Sessions">
+        </div>
+        <div class="card-content">
+          <h3>Certification Content from MOOC courses</h3>
+          <p>The curriculum will match leading academic institutions and certification partners.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="highlight-card">
+        <div class="icon-circle">
+          <img src="global.png" alt="Global Network">
+        </div>
+        <div class="card-content">
+          <h3>Industry Project</h3>
+          <p>Industrial projects will be mentored in the programme's final year.</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="highlight-card">
+        <div class="icon-circle">
+          <img src="collaboration.png" alt="Live Projects">
+        </div>
+        <div class="card-content">
+          <h3>Faculties</h3>
+          <p>Faculties with Global University Pedigree.</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <style>
+    .highlights-section {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 50px 0;
+      background-color: #333;
+    }
+
+    .section-highlights-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-highlights-header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 75px 25px;
+      margin-top: 40px;
+      padding-top: 50px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .highlight-card {
+      background-color: white;
+      border-radius: 15px;
+      padding: 0 20px 25px 20px;
+      position: relative;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+      transition: all 0.3s ease;
+      overflow: visible;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid transparent;
+    }
+
+    .highlight-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(255, 107, 0, 0.12);
+      border-color: #ff8c42;
+    }
+
+    .icon-circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      /* background: linear-gradient(135deg, #ff6b00 0%, #ff8c42 100%); */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -50px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 20px rgba(255, 107, 0, 0.25);
+      /* border: 5px solid white; */
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Image styling inside circle */
+    .icon-circle img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+
+    .card-content {
+      text-align: center !important;
+      width: 100%;
+    }
+
+    .highlight-card h3 {
+      font-size: 18px;
+      color: #222;
+      /* margin-bottom: 12px; */
+      font-weight: 600;
+      line-height: 1.3;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Orange title for first card */
+    .highlight-card:hover h3 {
+      color: #ff6b00;
+      transform: translateY(-2px);
+      animation: title-pop 0.35s ease both;
+    }
+
+    @keyframes title-pop {
+      0% {
+        transform: translateY(0) scale(1);
+      }
+
+      60% {
+        transform: translateY(-3px) scale(1.02);
+      }
+
+      100% {
+        transform: translateY(-2px) scale(1.01);
+      }
+    }
+
+    .highlight-card p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: 400;
+      text-align: center !important;
+    }
+
+    /* Orange border for first card
+  .highlight-card:nth-child(1) {
+      border: 2px solid #ff6b00;
+  } */
+
+    @media (max-width: 1024px) {
+      .highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 75px 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 30px 0px;
+      }
+
+      .highlights-section {
+        padding: 50px 15px;
+      }
+
+      .section-highlights-header h1 {
+        font-size: 32px;
+        letter-spacing: 1px;
+      }
+
+      .section-highlights-header {
+        margin-bottom: 40px;
+      }
+
+      .highlights-grid {
+        grid-template-columns: 1fr;
+        gap: 60px 20px;
+        padding-top: 50px;
+      }
+
+      .highlight-card {
+        padding: 0 20px 25px 20px;
+      }
+
+      .icon-circle {
+        width: 90px;
+        height: 90px;
+        margin-top: -45px;
+      }
+
+      .icon-circle img {
+        width: 90px;
+        height: 90px;
+      }
+
+      .highlight-card h3 {
+        font-size: 1rem;
+      }
+
+      .highlight-card p {
+        font-size: 16px;
+      }
+    }
+
+    /* Minimal animation - simple fade in */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .highlight-card {
+      animation: fadeIn 0.5s ease forwards;
+      opacity: 0;
+    }
+
+    .highlight-card:nth-child(1) {
+      animation-delay: 0.05s;
+    }
+
+    .highlight-card:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+
+    .highlight-card:nth-child(3) {
+      animation-delay: 0.15s;
+    }
+
+    .highlight-card:nth-child(4) {
+      animation-delay: 0.2s;
+    }
+
+    .highlight-card:nth-child(5) {
+      animation-delay: 0.25s;
+    }
+
+    .highlight-card:nth-child(6) {
+      animation-delay: 0.3s;
+    }
+  </style>
+
   <!-- End Why Choose SMU Section -->
 
   <!-- About GLA Online & Digital Learnings Platforms -->
@@ -3653,7 +3462,8 @@
     <div class="career-options-grid">
       <div class="career-option-card">
         <div class="career-option-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
             <polyline points="16 18 22 12 16 6"></polyline>
             <polyline points="8 6 2 12 8 18"></polyline>
           </svg>
@@ -3662,7 +3472,8 @@
       </div>
       <div class="career-option-card">
         <div class="career-option-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
             <rect x="2" y="6" width="20" height="12" rx="2"></rect>
             <line x1="6" y1="10" x2="6.01" y2="10"></line>
             <line x1="10" y1="10" x2="10.01" y2="10"></line>
@@ -3673,16 +3484,20 @@
       </div>
       <div class="career-option-card">
         <div class="career-option-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
             <circle cx="12" cy="12" r="3"></circle>
-            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-1.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h1.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v1.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-1.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            <path
+              d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-1.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h1.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v1.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-1.09a1.65 1.65 0 0 0-1.51 1z">
+            </path>
           </svg>
         </div>
         <span class="career-option-label">System Analyst</span>
       </div>
       <div class="career-option-card">
         <div class="career-option-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
             <line x1="18" y1="20" x2="18" y2="10"></line>
             <line x1="12" y1="20" x2="12" y2="4"></line>
             <line x1="6" y1="20" x2="6" y2="14"></line>
@@ -3692,8 +3507,11 @@
       </div>
       <div class="career-option-card">
         <div class="career-option-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+            </path>
             <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
             <line x1="12" y1="22.08" x2="12" y2="12"></line>
           </svg>
@@ -3702,7 +3520,8 @@
       </div>
       <div class="career-option-card">
         <div class="career-option-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
             <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
             <line x1="8" y1="21" x2="16" y2="21"></line>
             <line x1="12" y1="17" x2="12" y2="21"></line>
@@ -3712,8 +3531,11 @@
       </div>
       <div class="career-option-card">
         <div class="career-option-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+            </path>
           </svg>
         </div>
         <span class="career-option-label">Troubleshooter</span>
@@ -3725,11 +3547,13 @@
       background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f1f3f5 100%);
       padding: 50px 20px;
     }
+
     .career-options-section-title {
       text-align: center;
       margin-bottom: 48px;
       animation: fadeInDown 0.8s ease-out;
     }
+
     .career-options-section-title h2 {
       color: #1a1a1a;
       font-size: 2.5rem;
@@ -3737,6 +3561,7 @@
       line-height: 1.3;
       margin: 0;
     }
+
     .career-options-grid {
       max-width: 1200px;
       margin: 0 auto;
@@ -3744,14 +3569,17 @@
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 24px;
     }
+
     @media (min-width: 992px) {
       .career-options-grid {
         grid-template-columns: repeat(3, 1fr);
       }
+
       .career-option-card:last-child {
         grid-column: 2;
       }
     }
+
     .career-option-card {
       display: flex;
       align-items: center;
@@ -3765,19 +3593,42 @@
       opacity: 0;
       animation: fadeInUp 0.6s ease-out forwards;
     }
-    .career-option-card:nth-child(1) { animation-delay: 0.05s; }
-    .career-option-card:nth-child(2) { animation-delay: 0.1s; }
-    .career-option-card:nth-child(3) { animation-delay: 0.15s; }
-    .career-option-card:nth-child(4) { animation-delay: 0.2s; }
-    .career-option-card:nth-child(5) { animation-delay: 0.25s; }
-    .career-option-card:nth-child(6) { animation-delay: 0.3s; }
-    .career-option-card:nth-child(7) { animation-delay: 0.35s; }
+
+    .career-option-card:nth-child(1) {
+      animation-delay: 0.05s;
+    }
+
+    .career-option-card:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+
+    .career-option-card:nth-child(3) {
+      animation-delay: 0.15s;
+    }
+
+    .career-option-card:nth-child(4) {
+      animation-delay: 0.2s;
+    }
+
+    .career-option-card:nth-child(5) {
+      animation-delay: 0.25s;
+    }
+
+    .career-option-card:nth-child(6) {
+      animation-delay: 0.3s;
+    }
+
+    .career-option-card:nth-child(7) {
+      animation-delay: 0.35s;
+    }
+
     .career-option-card:hover {
       transform: translateY(-4px);
       border-color: rgba(255, 61, 2, 0.35);
       background: #ffffff;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     }
+
     .career-option-icon {
       flex-shrink: 0;
       width: 52px;
@@ -3790,49 +3641,60 @@
       border: 2px solid rgba(255, 107, 53, 0.25);
       transition: all 0.3s ease;
     }
+
     .career-option-card:hover .career-option-icon {
       background: rgba(255, 107, 53, 0.18);
       border-color: rgba(255, 61, 2, 0.5);
       transform: scale(1.05);
     }
+
     .career-option-icon svg {
       width: 26px;
       height: 26px;
       stroke: #ff3d02;
       fill: none;
     }
+
     .career-option-card:hover .career-option-icon svg {
       stroke: #e63500;
     }
+
     .career-option-label {
       color: #333333;
       font-size: 1.1rem;
       font-weight: 500;
       transition: color 0.3s ease;
     }
+
     .career-option-card:hover .career-option-label {
       color: #1a1a1a;
     }
+
     @media (max-width: 768px) {
       .career-options-section-title h2 {
         font-size: 1.8rem;
       }
+
       .career-options-grid {
         gap: 16px;
         grid-template-columns: 1fr;
       }
+
       .career-option-card {
         padding: 20px;
         gap: 16px;
       }
+
       .career-option-icon {
         width: 46px;
         height: 46px;
       }
+
       .career-option-icon svg {
         width: 22px;
         height: 22px;
       }
+
       .career-option-label {
         font-size: 1rem;
       }
@@ -4182,119 +4044,7 @@
 
     </div>
   </section>
-
-  <!-- UNPARALLELED BENCHMARKS Section -->
-  <section class="benchmarks-section">
-    <div class="container">
-      <h2 class="benchmarks-heading" data-aos="fade-up">
-        UNPARALLELED BENCHMARKS <span class="benchmarks-subtitle">Created by GLA</span>
-      </h2>
-      <div class="benchmarks-grid">
-        <div class="benchmark-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="benchmark-icon">
-            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="30" cy="30" r="28" stroke="url(#gradient1)" stroke-width="3" fill="none" />
-              <path d="M20 30 L27 37 L40 23" stroke="url(#gradient1)" stroke-width="3" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <defs>
-                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#ff3d02;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#f6393f;stop-opacity:1" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div class="benchmark-number" data-target="86">0</div>
-          <div class="benchmark-symbol">%</div>
-          <div class="benchmark-label">Overall Placement in Last 5 Years</div>
-        </div>
-
-        <div class="benchmark-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="benchmark-icon">
-            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="30" cy="30" r="28" stroke="url(#gradient1)" stroke-width="3" fill="none" />
-              <!-- Graduation cap -->
-              <path d="M30 18L15 24L30 30L45 24L30 18Z" stroke="url(#gradient1)" stroke-width="3" fill="none"
-                stroke-linejoin="round" />
-              <path d="M21 27V33L30 37L39 33V27" stroke="url(#gradient1)" stroke-width="3" fill="none"
-                stroke-linejoin="round" />
-              <line x1="45" y1="24" x2="45" y2="38" stroke="url(#gradient1)" stroke-width="3" stroke-linecap="round" />
-              <defs>
-                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#ff3d02;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#f6393f;stop-opacity:1" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div class="benchmark-number" data-target="46">0</div>
-          <div class="benchmark-symbol">k+</div>
-          <div class="benchmark-label">Alumni Across the Globe</div>
-        </div>
-
-        <div class="benchmark-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="benchmark-icon">
-            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="30" cy="30" r="28" stroke="url(#gradient2)" stroke-width="3" fill="none" />
-              <!-- Three people -->
-              <circle cx="22" cy="24" r="4" stroke="url(#gradient2)" stroke-width="3" fill="none" />
-              <path d="M14 40C14 35 17 32 22 32C27 32 30 35 30 40" stroke="url(#gradient2)" stroke-width="3" fill="none"
-                stroke-linecap="round" />
-
-              <circle cx="38" cy="24" r="4" stroke="url(#gradient2)" stroke-width="3" fill="none" />
-              <path d="M30 40C30 35 33 32 38 32C43 32 46 35 46 40" stroke="url(#gradient2)" stroke-width="3" fill="none"
-                stroke-linecap="round" />
-
-              <circle cx="30" cy="18" r="4" stroke="url(#gradient2)" stroke-width="3" fill="none" />
-              <defs>
-                <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#ff3d02;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#f6393f;stop-opacity:1" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div class="benchmark-number" data-target="23">0</div>
-          <div class="benchmark-symbol">k+</div>
-          <div class="benchmark-label">Students Enrolled in Different Courses</div>
-        </div>
-
-        <div class="benchmark-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="benchmark-icon">
-            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="30" cy="30" r="28" stroke="url(#gradient-f5)" stroke-width="3" fill="none" />
-              <!-- Certificate -->
-              <rect x="14" y="18" width="32" height="24" rx="1" stroke="url(#gradient-f5)" stroke-width="3"
-                fill="none" />
-              <!-- Lines on certificate -->
-              <line x1="18" y1="24" x2="42" y2="24" stroke="url(#gradient-f5)" stroke-width="2"
-                stroke-linecap="round" />
-              <line x1="18" y1="28" x2="42" y2="28" stroke="url(#gradient-f5)" stroke-width="2"
-                stroke-linecap="round" />
-              <line x1="18" y1="32" x2="36" y2="32" stroke="url(#gradient-f5)" stroke-width="2"
-                stroke-linecap="round" />
-              <!-- Ribbon -->
-              <circle cx="38" cy="38" r="4" stroke="url(#gradient-f5)" stroke-width="3" fill="none" />
-              <line x1="38" y1="42" x2="36" y2="46" stroke="url(#gradient-f5)" stroke-width="2"
-                stroke-linecap="round" />
-              <line x1="38" y1="42" x2="40" y2="46" stroke="url(#gradient-f5)" stroke-width="2"
-                stroke-linecap="round" />
-              <defs>
-                <linearGradient id="gradient-f5" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#ff3d02;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#f6393f;stop-opacity:1" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div class="benchmark-number" data-target="650">0</div>
-          <div class="benchmark-symbol">+</div>
-          <div class="benchmark-label">Faculty Members from Global Institutions</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  
   <!-- journey section -->
   <section class="sec-padding-2 map">
     <div class="container">
